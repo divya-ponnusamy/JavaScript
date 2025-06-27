@@ -1,5 +1,5 @@
 //for loop
-/*
+
 for(let i=1;i<=5;i++){
     console.log(i)
 }
@@ -183,4 +183,65 @@ do{
     console.log(line);
     i++
 }while(i<=5);
-*/
+
+
+//for...of loop
+str='divya';
+for(let char of str){
+    console.log(char)
+}
+
+num=[10, 20, 30, 40, 50]
+for(let number of num){
+    console.log(number);
+}
+
+str="HELLO WORLD"
+for(let char of str){
+    console.log(char);
+}
+
+
+arr=["apple", "banana", "mango"]
+for(let out of arr){
+    console.log(out)
+}
+
+let word="banana";
+let count=0;
+for(let char of word){
+    if(char=='a'){
+        count++
+    }
+}
+console.log("Number of a ",count)
+
+//for..in loop
+let student = { name: "John", age: 20, grade: "A" };
+for(let stu in student){
+    console.log(stu,student[stu])
+}
+
+let colors = ["red", "green", "blue"];
+for(let col in colors){
+    console.log(col,colors[col])
+}
+
+let laptop = { brand: "Dell", processor: "i5", ram: "8GB" };
+for(let lap in laptop){
+    console.log(laptop[lap]);
+}
+
+let person = { firstName: "Alice", lastName: "Smith", age: 30 };
+count=0;
+for(let per in person){
+    count++
+}
+console.log("number of propertiescount:",count)
+
+let data = { id: 101, name: "Mobile", price: 5000, available: true };
+for(let dat in data){
+    if(typeof data[dat]=="string"){
+        console.log(dat)
+    }
+}
